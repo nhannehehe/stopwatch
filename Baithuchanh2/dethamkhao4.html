@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0 auto;
+            
+        }
+        .wapper{
+            width: 960px;
+            min-height: 300px;
+            border: 1px solid black;
+        }
+        .header{
+            width: 100%;
+            height: 60px;
+            background-color: brown;
+            position: relative;
+            border: 1px solid ssrgb(32, 42, 241);
+           
+
+        }
+        .header>h1{
+            color: greenyellow;
+            text-shadow: -2px -4px 10px white;
+            margin-left: 20px;
+            letter-spacing: 2px;
+            margin-top: 10px;
+        }
+        nav{
+            width: 100%;
+            border: 1px solid black;
+    
+
+        }
+        .menu{
+            width: 600px;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+        .menu>li>a{
+            text-decoration: none;
+            color: brown;
+        }
+        .banner{
+            width: 100%;
+            margin-top: 10px;
+        }
+        .banner>img{
+            object-fit: cover;
+            width: 100%;
+        }
+        .content{
+            width: 100%;
+            display: flex;
+            border-bottom: 1px solid black;
+            
+        }
+        .content-left{
+            display: flex;
+            margin: 0;
+            width: 660px;
+            flex-direction: column;
+            justify-content: start;
+            flex:2
+            
+        }
+        
+        .content-left>form{
+            margin: 0;
+            display: flex;
+            width: 420px;
+            flex-direction: column;
+        }
+        input{
+            width: 460px;
+            height: 30px;
+            margin-bottom: 10px;
+            border: 0px ;
+            border-bottom: 1px black solid;
+            margin-left: 20px;
+        }
+        #sub{
+            border: 0px  ;
+            background-color: greenyellow;
+            width: 100px;
+        }
+        .content-left>h3{
+            margin: 0;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            letter-spacing: 2px;
+            color:burlywood;
+        }
+        .content-left>p{
+            margin: 0;
+          width:400px ;
+          margin-left: 20px;
+          margin-bottom: 20px;
+          color: burlywood;
+          font-style: italic;
+        font-style:initial;
+        }
+        .content-right{
+            padding-left:10px;
+            border-left: 0.5px solid rgb(204, 192, 192);
+            flex:1
+            
+        }
+        .content-right>.content-right-top{
+            border: 1px;
+             background-color: burlywood;
+             border-radius: 10px 10px 0px 0px;
+             margin-right: 20px;
+             margin-bottom: 10px;
+        }
+        .content-right>.content-right-top>h3{
+            margin-left: 10px;
+            letter-spacing: 2px;
+           
+        }
+        .content-right>.content-right-top>ul{
+            list-style: square;
+            margin-left: 40px;
+        }
+        .content-right>.content-right-bottom>img{
+            float: left;
+            border: 0.5px solid gray;
+            padding: 10px;
+            margin-right: 10px;
+            width: 60px;
+           
+        }
+        .content-right>.content-right-bottom>h3{
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            margin-left: 10px;
+        }
+        .content-right>.content-right-bottom>p{
+            width: 250px;
+            margin: 10px;
+            text-align: justify;
+        }
+        .footer{
+            margin-top: 15px;
+            height: 40px;
+            text-align: center;
+            font-size: 10px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="wapper">
+        <div class="header">
+            <h1> AUTUMN TRAVEL COMPANY</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Order</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <img src="Screenshot 2023-03-25 205504.png" alt="">
+        </div>
+        <div class="content">
+            <div class="content-left">
+                <h3>Sign up for membership benefits</h3>
+                <p>Our philosophical values are transparency, respect, formality and responsubility. Our stimules is your enthusiam. Our motto is your satisfaction</p>
+                <form action="">
+                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="Password">
+                    <input type="text" placeholder="Retype password">
+                    <input type="button" id="sub" value="SIGN ME UP" >
+                </form>
+            </div>
+            <div class="content-right">
+                <div class="content-right-top">
+                    <h3>Links</h3>
+                    <ul>
+                        <li>Make your Own Tour</li>
+                        <li>Maldives Tours</li>
+                        <li>Nature & Adventeure</li>
+                        <li>Readymade Tours</li>
+                        <li>Europe Tours</li>
+                        <li>Rusia Tours</li>
+                    </ul>
+                </div>
+                <div class="content-right-bottom">
+                    <h3>More info</h3>
+                    <img src="Screenshot 2023-03-26 204133.png" alt="">
+                    
+                    <p>
+                        Our purpose is the client who gives to us the oppotunity to serbe and to nake known the reality around the word
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <p>&copy; 2017 Software Eingineering Department | Test Date: 16 Sept 2017</p>
+            
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>
